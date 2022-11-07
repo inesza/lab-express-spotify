@@ -1,0 +1,16 @@
+<h1>Search results for : <em>{{query}}</em></h1>
+<section class="container search-results">
+    {{#if foundArtist}}
+    {{#each foundArtist}}
+    <a href="/albums/{{this.id}}" class="card">
+        <article>
+            <img src="{{this.images.[0].url}}" alt="">
+            <div class="info">
+                <h2>{{this.name}}</h2>
+                <span class="btn">View albums</span>
+            </div>
+        </article>
+    </a>
+    {{/each}}
+    {{/if}}
+</section>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3em;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background: rgb(255, 48, 72);
+    padding: .5em 1em;
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.btn:hover {
+    color: rgb(255, 48, 72);
+    background: white;
+    border: 1px solid rgb(255, 48, 72)
+}
+
+body.page-home {
+    background: no-repeat url('/images/spotify-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.page-home nav {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.search-form {
+    width: 50%;
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.385);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    width: 100%;
+}
+
+form input {
+    border-radius: 5px;
+    border: none;
+    padding: 1em;
+    width: 80%;
+}
+
+form button {
+    border: none;
+    color: white;
+    background: rgb(255, 48, 72);
+    padding: 1em;
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.container .card {
+    width: 30%;
+    max-width: 300px;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.container .card:hover {
+    transform: scale(.9)
+}
+
+.container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.container article .info {
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    row-gap: 1em;
+    margin-top: 1em;
+}
+
+.track-player {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.track-player article {
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2em 1em;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    background: #F1F3F4;
+}

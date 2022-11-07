@@ -1,0 +1,13 @@
+<h1>{{album}} - <em>{{artist}}</em></h1>
+<section class="artist-albums track-player">
+    {{#each tracks}}
+    <article>
+        <p>{{this.track_number}}. {{this.name}}</p>
+
+        {{#if this.preview_url}}
+        <audio controls controlsList="nodownload" src="{{this.preview_url}}"></audio>
+        {{/if}}
+
+    </article>
+    {{/each}}
+</section>
